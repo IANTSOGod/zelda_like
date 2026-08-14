@@ -1,0 +1,6 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+zelda_like.exe
+zelda_like.console.exe
+zelda_like.pck

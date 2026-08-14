@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cqvrvx8snqony"]
+
+[ext_resource type="PackedScene" uid="uid://cxh88wn0fayqx" path="res://script/character_scene.tscn" id="1_aq12l"]
+[ext_resource type="Script" uid="uid://buel6gbbeph5d" path="res://script/main_scene.gd" id="1_ycbe4"]
+
+[node name="MainScene" type="Node2D" unique_id=648097895]
+script = ExtResource("1_ycbe4")
+
+[node name="CharacterScene" parent="." unique_id=549884163 instance=ExtResource("1_aq12l")]
+
+[node name="LevelContainer" type="Node2D" parent="." unique_id=1914567888]
