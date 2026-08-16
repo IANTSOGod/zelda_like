@@ -18,5 +18,8 @@ func _physics_process(delta: float) -> void:
 	else:
 		$character_animation.play("idle")	
 		
-	velocity=direction*SPEED
+	if direction.x!=0 and direction.y!=0:
+		pass
+	else:
+		velocity=direction*SPEED
 	move_and_slide()

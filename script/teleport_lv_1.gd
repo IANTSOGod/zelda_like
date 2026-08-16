@@ -6,4 +6,4 @@ func _ready() -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		var mainscene=get_tree().current_scene 
-		mainscene.call_deferred("switch_lvl",1,"spawn")
+		mainscene.call_deferred("switch_lvl",1,"spawn",1)

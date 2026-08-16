@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://cl0ilqj2vv6b0"]
+
+[ext_resource type="Texture2D" uid="uid://di2iosx1vyxhh" path="res://env/plain/Wooden House.png" id="1_gwcuy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8t0t"]
+atlas = ExtResource("1_gwcuy")
+region = Rect2(37, 16, 37, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwcuy"]
+atlas = ExtResource("1_gwcuy")
+region = Rect2(37, 16, 37, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7oxkd"]
+atlas = ExtResource("1_gwcuy")
+region = Rect2(37, 48, 37, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpf0x"]
+atlas = ExtResource("1_gwcuy")
+region = Rect2(37, 32, 37, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yiacb"]
+atlas = ExtResource("1_gwcuy")
+region = Rect2(37, 0, 37, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_24vqr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p8t0t")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwcuy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7oxkd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mpf0x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yiacb")
+}],
+"loop": 1,
+"name": &"open",
+"speed": 5.0
+}]
+
+[node name="Doorscene" type="Node2D" unique_id=950735625]
+
+[node name="Door" type="AnimatableBody2D" parent="." unique_id=753617971 groups=["teleport_object"]]
+position = Vector2(393, 256)
+
+[node name="Dooranimation" type="AnimatedSprite2D" parent="Door" unique_id=1509728378]
+z_index = 2
+position = Vector2(-5.722046e-06, -3.695488e-06)
+scale = Vector2(0.9864862, 1.1874995)
+sprite_frames = SubResource("SpriteFrames_24vqr")
+animation = &"open"
+frame_progress = 0.006087581

@@ -196,7 +196,7 @@ script = ExtResource("3_7avrq")
 position = Vector2(1153, 325)
 shape = SubResource("CircleShape2D_vdi2f")
 
-[node name="Lvl2_spawn" type="Marker2D" parent="." unique_id=1404291364]
+[node name="Lvl2_spawn_1" type="Marker2D" parent="." unique_id=1404291364]
 position = Vector2(1094, 328)
 
 [connection signal="body_entered" from="Teleport_lv1" to="Teleport_lv1" method="_on_body_entered"]
