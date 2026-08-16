@@ -3,7 +3,8 @@ extends Node2D
 @export var current_level:Node2D
 @export var level_list=[
 	"res://script/lvl1_scene.tscn",
-	"res://script/lvl2_scene.tscn"
+	"res://script/lvl2_scene.tscn",
+	"res://script/lvl3_scene.tscn"
 ]
 @export var house_list=[
 	["res://script/Houses/lvl_1_house_1.tscn"],
