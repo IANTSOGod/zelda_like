@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cl0ilqj2vv6b0"]
 
+[ext_resource type="Script" uid="uid://8nyv84q6sxuu" path="res://script/doorscene.gd" id="1_7oxkd"]
 [ext_resource type="Texture2D" uid="uid://di2iosx1vyxhh" path="res://env/plain/Wooden House.png" id="1_gwcuy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p8t0t"]
@@ -51,6 +52,7 @@ animations = [{
 }]
 
 [node name="Doorscene" type="Node2D" unique_id=950735625]
+script = ExtResource("1_7oxkd")
 
 [node name="Door" type="AnimatableBody2D" parent="." unique_id=753617971 groups=["teleport_object"]]
 position = Vector2(393, 256)
@@ -61,4 +63,4 @@ position = Vector2(-5.722046e-06, -3.695488e-06)
 scale = Vector2(0.9864862, 1.1874995)
 sprite_frames = SubResource("SpriteFrames_24vqr")
 animation = &"open"
-frame_progress = 0.006087581
+frame_progress = 0.40247792

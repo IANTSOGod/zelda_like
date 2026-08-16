@@ -1,8 +1,14 @@
 extends Node2D
 
 @export var current_level:Node2D
-@export var level_list=["res://script/lvl1_scene.tscn","res://script/lvl2_scene.tscn"]
-@export var house_list=[["res://script/Houses/lvl_1_house_1.tscn"],[]]
+@export var level_list=[
+	"res://script/lvl1_scene.tscn",
+	"res://script/lvl2_scene.tscn"
+]
+@export var house_list=[
+	["res://script/Houses/lvl_1_house_1.tscn"],
+	[]
+]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	switch_lvl(1,"start",1)
