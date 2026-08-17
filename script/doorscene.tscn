@@ -46,9 +46,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yiacb")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"open",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [node name="Doorscene" type="Node2D" unique_id=950735625]

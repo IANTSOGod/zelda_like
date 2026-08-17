@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://di2iosx1vyxhh" path="res://env/plain/Wooden House.png" id="1_ni6j2"]
 [ext_resource type="Script" uid="uid://sci6jjbombo" path="res://script/Houses/house_teleport_lv_1.gd" id="2_31bqp"]
+[ext_resource type="Texture2D" uid="uid://bggi7sy7yiab2" path="res://tools/farm/Basic_Furniture.png" id="3_hhx4w"]
+[ext_resource type="PackedScene" uid="uid://c1aybf318hn2u" path="res://script/ItemScene/Bed_scene.tscn" id="4_6ie2y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_31bqp"]
 texture = ExtResource("1_ni6j2")
@@ -41,6 +43,49 @@ sources/0 = SubResource("TileSetAtlasSource_31bqp")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vdi2f"]
 radius = 16.27882
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ie2y"]
+texture = ExtResource("3_hhx4w")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hhx4w"]
 texture = ExtResource("1_ni6j2")
@@ -86,6 +131,53 @@ texture = ExtResource("1_ni6j2")
 [sub_resource type="TileSet" id="TileSet_vr1f1"]
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_hhx4w")
+sources/0 = SubResource("TileSetAtlasSource_6ie2y")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rgaon"]
+texture = ExtResource("3_hhx4w")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_rgaon"]
+sources/0 = SubResource("TileSetAtlasSource_rgaon")
 
 [node name="Lvl1_house_1" type="Node2D" unique_id=1031134492]
 
@@ -107,5 +199,17 @@ shape = SubResource("CircleShape2D_vdi2f")
 [node name="Ground_1" type="TileMapLayer" parent="." unique_id=789471214]
 tile_map_data = PackedByteArray("AAAkAB0AAQABAAMAAAAjAB0AAQABAAMAAAAiAB0AAQABAAMAAAAhAB0AAQABAAMAAAAgAB0AAQABAAMAAAAfAB0AAQABAAMAAAAeAB0AAQABAAMAAAAdAB0AAQABAAMAAAAcAB0AAQABAAMAAAAbAB0AAQABAAMAAAAaAB0AAQABAAMAAAAZAB0AAQABAAMAAAAYAB0AAQABAAMAAAAXAB0AAQABAAMAAAAWAB0AAQABAAMAAAAoAB0AAQABAAMAAAApAB0AAQABAAMAAAAqAB0AAQABAAMAAAArAB0AAQABAAMAAAAsAB0AAQABAAMAAAAtAB0AAQABAAMAAAAuAB0AAQABAAMAAAAvAB0AAQABAAMAAAAwAB0AAQABAAMAAAAxAB0AAQABAAMAAAAyAB0AAQABAAMAAAAzAB0AAQABAAMAAAA0AB0AAQABAAMAAAA1AB0AAQABAAMAAAAVAB0AAQAAAAMAAAAVABwAAQAAAAIAAAAVABsAAQAAAAIAAAAVABoAAQAAAAIAAAAVABkAAQAAAAIAAAAVABgAAQAAAAIAAAAVABcAAQAAAAIAAAAVABYAAQAAAAIAAAAVABUAAQAAAAIAAAAVABQAAQAAAAIAAAAVABMAAQAAAAIAAAAVABIAAQAAAAIAAAAVABEAAQAAAAIAAAAVABAAAQAAAAIAAAAVAA8AAQAAAAIAAAAVAA4AAQAAAAIAAAAVAA0AAQAAAAIAAAAVAAwAAQAAAAIAAAAVAAsAAQAAAAIAAAAVAAoAAQAAAAIAAAAWAAkAAQABAAEAAAAVAAkAAQAAAAEAAAAXAAkAAQABAAEAAAAYAAkAAQABAAEAAAAZAAkAAQABAAEAAAAaAAkAAQABAAEAAAAbAAkAAQABAAEAAAAcAAkAAQABAAEAAAAdAAkAAQABAAEAAAAeAAkAAQABAAEAAAAfAAkAAQABAAEAAAAgAAkAAQABAAEAAAAhAAkAAQABAAEAAAAiAAkAAQABAAEAAAAjAAkAAQABAAEAAAAkAAkAAQABAAEAAAAlAAkAAQABAAEAAAAmAAkAAQABAAEAAAAnAAkAAQABAAEAAAAoAAkAAQABAAEAAAApAAkAAQABAAEAAAAqAAkAAQABAAEAAAArAAkAAQABAAEAAAAsAAkAAQABAAEAAAAtAAkAAQABAAEAAAAuAAkAAQABAAEAAAAvAAkAAQABAAEAAAAwAAkAAQABAAEAAAAxAAkAAQABAAEAAAAyAAkAAQABAAEAAAAzAAkAAQABAAEAAAA0AAkAAQABAAEAAAA1AAkAAQABAAEAAAA2AAkAAQACAAEAAAA2AAoAAQACAAIAAAA2AAsAAQACAAIAAAA2AAwAAQACAAIAAAA2AA0AAQACAAIAAAA2AA4AAQACAAIAAAA2AA8AAQACAAIAAAA2ABAAAQACAAIAAAA2ABEAAQACAAIAAAA2ABIAAQACAAIAAAA2ABMAAQACAAIAAAA2ABQAAQACAAIAAAA2ABUAAQACAAIAAAA2ABYAAQACAAIAAAA2ABcAAQACAAIAAAA2ABgAAQACAAIAAAA2ABkAAQACAAIAAAA2ABoAAQACAAIAAAA2ABsAAQACAAIAAAA2ABwAAQACAAIAAAA2AB0AAQACAAMAAAA=")
 tile_set = SubResource("TileSet_vr1f1")
+
+[node name="Furniture_layer" type="TileMapLayer" parent="." unique_id=320979558]
+z_index = 1
+position = Vector2(8, 4)
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAASAA4AAAADAAUAAAATAA4AAAAEAAUAAAALAAgAAAAEAAIAAAANAAgAAAAFAAIAAAA=")
+tile_set = SubResource("TileSet_rgaon")
+
+[node name="BedScene" parent="." unique_id=1936672993 instance=ExtResource("4_6ie2y")]
+position = Vector2(843.00006, 430)
+rotation = -6.2831855
+scale = Vector2(3, 3)
 
 [connection signal="body_entered" from="House_teleport_lv1" to="House_teleport_lv1" method="_on_body_entered"]

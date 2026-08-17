@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://c1aybf318hn2u"]
+
+[ext_resource type="Texture2D" uid="uid://bggi7sy7yiab2" path="res://tools/farm/Basic_Furniture.png" id="1_5qv32"]
+[ext_resource type="Script" uid="uid://deo0us0c40pn7" path="res://script/ItemScene/bed_scene.gd" id="1_8pcux"]
+[ext_resource type="Script" uid="uid://7fobcxbnpj5y" path="res://script/ItemScene/bed_usablearea.gd" id="2_hlowe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlowe"]
+atlas = ExtResource("1_5qv32")
+region = Rect2(0, 24, 16, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vdi2f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlowe")
+}],
+"loop": 1,
+"name": &"idle_green",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vr1f1"]
+size = Vector2(14, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vdi2f"]
+size = Vector2(36, 40)
+
+[sub_resource type="LabelSettings" id="LabelSettings_vdi2f"]
+font_size = 5
+
+[node name="BedScene" type="Node2D" unique_id=1936672993]
+script = ExtResource("1_8pcux")
+
+[node name="Bed_green" type="StaticBody2D" parent="." unique_id=1806922131]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Bed_green" unique_id=1894272910]
+sprite_frames = SubResource("SpriteFrames_vdi2f")
+animation = &"idle_green"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed_green" unique_id=437731043]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_vr1f1")
+
+[node name="Bed_usablearea" type="Area2D" parent="." unique_id=927448298]
+script = ExtResource("2_hlowe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed_usablearea" unique_id=570334277]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_vdi2f")
+
+[node name="BedControl" type="Control" parent="." unique_id=1882141549]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 15.0
+offset_bottom = 15.0
+
+[node name="Panel" type="Panel" parent="BedControl" unique_id=942406036]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -20.0
+offset_right = 22.0
+offset_bottom = -7.0
+
+[node name="Label" type="Label" parent="BedControl/Panel" unique_id=1478290136]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 14.0
+offset_bottom = 11.0
+text = "Enter"
+label_settings = SubResource("LabelSettings_vdi2f")
+
+[connection signal="body_entered" from="Bed_usablearea" to="Bed_usablearea" method="_on_body_entered"]
+[connection signal="body_exited" from="Bed_usablearea" to="Bed_usablearea" method="_on_body_exited"]
