@@ -9,3 +9,6 @@ script = ExtResource("1_ycbe4")
 [node name="CharacterScene" parent="." unique_id=549884163 instance=ExtResource("1_aq12l")]
 
 [node name="LevelContainer" type="Node2D" parent="." unique_id=1914567888]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1531211450]
+position = Vector2(581, 329)

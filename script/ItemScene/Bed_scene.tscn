@@ -56,10 +56,10 @@ offset_bottom = 15.0
 
 [node name="Panel" type="Panel" parent="BedControl" unique_id=942406036]
 layout_mode = 0
-offset_left = 7.0
-offset_top = -20.0
-offset_right = 22.0
-offset_bottom = -7.0
+offset_left = -8.0
+offset_top = -22.0
+offset_right = 7.0
+offset_bottom = -9.0
 
 [node name="Label" type="Label" parent="BedControl/Panel" unique_id=1478290136]
 custom_minimum_size = Vector2(5, 5)
