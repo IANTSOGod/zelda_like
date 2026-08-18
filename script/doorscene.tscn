@@ -1,27 +1,27 @@
 [gd_scene format=3 uid="uid://cl0ilqj2vv6b0"]
 
 [ext_resource type="Script" uid="uid://8nyv84q6sxuu" path="res://script/doorscene.gd" id="1_7oxkd"]
-[ext_resource type="Texture2D" uid="uid://di2iosx1vyxhh" path="res://env/plain/Wooden House.png" id="1_gwcuy"]
+[ext_resource type="Texture2D" uid="uid://c6qcjd0u24yc4" path="res://tools/items/Door/door_1_16x16.png" id="2_7oxkd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p8t0t"]
-atlas = ExtResource("1_gwcuy")
-region = Rect2(37, 16, 37, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gwcuy"]
-atlas = ExtResource("1_gwcuy")
-region = Rect2(37, 16, 37, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7oxkd"]
-atlas = ExtResource("1_gwcuy")
-region = Rect2(37, 48, 37, 16)
+atlas = ExtResource("2_7oxkd")
+region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mpf0x"]
-atlas = ExtResource("1_gwcuy")
-region = Rect2(37, 32, 37, 16)
+atlas = ExtResource("2_7oxkd")
+region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yiacb"]
-atlas = ExtResource("1_gwcuy")
-region = Rect2(37, 0, 37, 16)
+atlas = ExtResource("2_7oxkd")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iaguv"]
+atlas = ExtResource("2_7oxkd")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24vqr"]
+atlas = ExtResource("2_7oxkd")
+region = Rect2(0, 48, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_24vqr"]
 animations = [{
@@ -35,16 +35,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gwcuy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7oxkd")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_mpf0x")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yiacb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iaguv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24vqr")
 }],
 "loop": 0,
 "name": &"open",
@@ -58,9 +58,8 @@ script = ExtResource("1_7oxkd")
 position = Vector2(393, 256)
 
 [node name="Dooranimation" type="AnimatedSprite2D" parent="Door" unique_id=1509728378]
-z_index = 2
+z_index = 1
 position = Vector2(-5.722046e-06, -3.695488e-06)
 scale = Vector2(0.9864862, 1.1874995)
 sprite_frames = SubResource("SpriteFrames_24vqr")
 animation = &"open"
-frame_progress = 0.40247792

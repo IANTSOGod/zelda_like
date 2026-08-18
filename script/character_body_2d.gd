@@ -7,6 +7,16 @@ const JUMP_VELOCITY = -400.0
 func _physics_process(delta: float) -> void:
 	
 	var direction=Input.get_vector("ui_left","ui_right","ui_up","ui_down")
+	handle_character_walk_animation()	
+	#add movement constraints here	
+	if direction.x!=0 and direction.y!=0:
+		pass
+	else:
+		velocity=direction*SPEED
+	
+	move_and_slide()
+	
+func handle_character_walk_animation():
 	if Input.is_action_pressed("ui_right"):
 		$character_animation.play("walk_right")
 	elif Input.is_action_pressed("ui_left"):
@@ -16,10 +26,4 @@ func _physics_process(delta: float) -> void:
 	elif Input.is_action_pressed("ui_down"):
 		$character_animation.play("walk_down")
 	else:
-		$character_animation.play("idle")	
-		
-	if direction.x!=0 and direction.y!=0:
-		pass
-	else:
-		velocity=direction*SPEED
-	move_and_slide()
+		$character_animation.play("idle")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://di2iosx1vyxhh" path="res://env/plain/Wooden House.png" id="1_ni6j2"]
 [ext_resource type="Script" uid="uid://sci6jjbombo" path="res://script/Houses/house_teleport_lv_1.gd" id="2_31bqp"]
-[ext_resource type="Texture2D" uid="uid://bggi7sy7yiab2" path="res://tools/farm/Basic_Furniture.png" id="3_hhx4w"]
+[ext_resource type="Texture2D" uid="uid://bggi7sy7yiab2" path="res://tools/items/farming_tools/Basic_Furniture.png" id="3_hhx4w"]
 [ext_resource type="PackedScene" uid="uid://c1aybf318hn2u" path="res://script/ItemScene/Bed_scene.tscn" id="4_6ie2y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_31bqp"]

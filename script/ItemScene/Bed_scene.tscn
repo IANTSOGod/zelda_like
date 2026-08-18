@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c1aybf318hn2u"]
 
-[ext_resource type="Texture2D" uid="uid://bggi7sy7yiab2" path="res://tools/farm/Basic_Furniture.png" id="1_5qv32"]
+[ext_resource type="Texture2D" uid="uid://bggi7sy7yiab2" path="res://tools/items/farming_tools/Basic_Furniture.png" id="1_5qv32"]
 [ext_resource type="Script" uid="uid://deo0us0c40pn7" path="res://script/ItemScene/bed_scene.gd" id="1_8pcux"]
 [ext_resource type="Script" uid="uid://7fobcxbnpj5y" path="res://script/ItemScene/bed_usablearea.gd" id="2_hlowe"]
 
@@ -49,6 +49,7 @@ position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_vdi2f")
 
 [node name="BedControl" type="Control" parent="." unique_id=1882141549]
+texture_filter = 1
 layout_mode = 3
 anchors_preset = 0
 offset_right = 15.0
